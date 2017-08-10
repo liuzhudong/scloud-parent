@@ -1,23 +1,18 @@
 ## config
-server:
-  port: 8888
+server.port: 8888
+spring.application.name: configServer
 
-logging:
-  level:
-    org.springframework: info
+## log
+logging.level.org.springframework: info
 
-spring:
-  application:
-    name: configServer
-  cloud:
-    config:
-      server:
-        git:
-          basedir: config-reposs
-          uri: https://github.com/liuzhudong/scloud-parent.git
-          searchPaths: config-repo
+## git repo
+spring.cloud.config.server.git.uri: https://git.coding.net/liuzhudong/config-repo.git
+spring.cloud.config.server.git.basedir: config-repo
+spring.cloud.config.server.git.searchPaths: spring-cloud-config
+spring.cloud.config.server.git.username: liuzhudong
+spring.cloud.config.server.git.password: liu785827
 
-management:
-  security:
-    enabled: false
+##
+management.security.enabled: false
+
 
