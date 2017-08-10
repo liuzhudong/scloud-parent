@@ -8,9 +8,12 @@ logging.level.org.springframework: info
 ## git repo
 spring.cloud.config.server.git.uri: https://git.coding.net/liuzhudong/config-repo.git
 spring.cloud.config.server.git.basedir: config-repo
-spring.cloud.config.server.git.searchPaths: spring-cloud-config
+spring.cloud.config.server.git.searchPaths: /spring-cloud-config
 spring.cloud.config.server.git.username: liuzhudong
 spring.cloud.config.server.git.password: liu785827
+
+##
+eureka.client.serviceUrl.defaultZone: http://127.0.0.1:8000/eureka/
 
 ##
 management.security.enabled: false

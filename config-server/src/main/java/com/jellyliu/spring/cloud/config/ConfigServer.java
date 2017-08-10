@@ -2,10 +2,11 @@ package com.jellyliu.spring.cloud.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
- * 配置服务
+ * 配置中心
  *
  * @Creater liuzhudong
  * @Date 17/7/17 下午4:31
@@ -15,9 +16,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
 @EnableConfigServer
-public class Application {
+@EnableDiscoveryClient
+public class ConfigServer {
 
   public static void main(String[] args) {
-    SpringApplication.run(Application.class, args);
+    SpringApplication.run(ConfigServer.class, args);
   }
 }

@@ -7,11 +7,13 @@
   <groupId>com.jellyliu.spring.cloud</groupId>
   <artifactId>scloud-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <modules>
     <module>config-server</module>
     <module>test-cli</module>
+    <module>eureka-server</module>
   </modules>
-  <packaging>pom</packaging>
 
   <!-- 设置 -->
   <properties>
