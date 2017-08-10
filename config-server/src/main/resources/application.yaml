@@ -1,0 +1,23 @@
+## config
+server:
+  port: 8888
+
+logging:
+  level:
+    org.springframework: info
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          basedir: config-reposs
+          uri: https://github.com/liuzhudong/scloud-parent.git
+          searchPaths: config-repo
+
+management:
+  security:
+    enabled: false
+
