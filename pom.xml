@@ -13,6 +13,7 @@
     <module>config-server</module>
     <module>test-cli</module>
     <module>eureka-server</module>
+    <module>service-city-add</module>
   </modules>
 
   <!-- 设置 -->

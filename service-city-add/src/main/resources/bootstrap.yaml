@@ -1,0 +1,11 @@
+##
+spring.application.name: service-city-add
+server.port: 8081
+
+## config
+spring.cloud.config.uri: http://localhost:8888
+spring.cloud.config.name: mysql-jiangchang
+spring.cloud.config.profile: ${config.profile:test}
+
+##
+eureka.client.serviceUrl.defaultZone: http://localhost:8000/eureka/
